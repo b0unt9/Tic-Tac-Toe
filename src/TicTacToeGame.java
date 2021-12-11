@@ -633,7 +633,7 @@ public class TicTacToeGame extends JFrame implements ActionListener {
     }
 
     /**
-     * AI가 2개 이상 연결한 OX 체크
+     * 인공지능이 2개 이상 연결한 OX 체크
      *
      * @return 버튼 번호
      */
