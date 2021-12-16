@@ -29,7 +29,7 @@ public class TicTacToeGame extends JFrame implements ActionListener {
     private final int LEVEL_SINGLE_HARD = 3; // 싱글 플레이 - 어려움
 
     // 플레이어 1 턴 
-    private static boolean player1Trun = true;
+    private static boolean player1Turn = true;
 
     private static final Random random = new Random();
     private boolean randomSelect = true;
@@ -323,14 +323,14 @@ public class TicTacToeGame extends JFrame implements ActionListener {
      */
     private void multiPlay(int index) {
         if (board[index].getText().equals("")) {
-            if (player1Trun) {
+            if (player1Turn) {
                 board[index].setText(setColor("X", "green"));
-                getResult(player1Trun);
-                player1Trun = false;
+                getResult(player1Turn);
+                player1Turn = false;
             } else {
                 board[index].setText(setColor("O", "blue"));
-                getResult(player1Trun);
-                player1Trun = true;
+                getResult(player1Turn);
+                player1Turn = true;
             }
         }
     }
