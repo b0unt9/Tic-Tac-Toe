@@ -34,7 +34,7 @@ public class TicTacToeMain extends JFrame implements ActionListener {
         this.add(singlePlayBtn);
 
         // 난이도 선택
-        levelChoiceLabel = new JLabel(TicTacToeGame.setColor("인공지능 난이도", "blue"));
+        levelChoiceLabel = new JLabel(TicTacToeGame.setColor("싱글 플레이 난이도", "blue"));
         levelChoiceLabel.setBounds(20, 140, 250, 50);
         levelChoiceLabel.setVisible(false);
         this.add(levelChoiceLabel);
